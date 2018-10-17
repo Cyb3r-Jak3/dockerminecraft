@@ -13,5 +13,5 @@ RUN sed -i 's/false/true/g' eula.txt
 EXPOSE 25565/tcp
 
 #Runs server completed
-#RUN java -Xms1536M -Xmx2048M -jar /home/server.jar nogui
+RUN java -Xms1536M -Xmx2048M -jar /home/server.jar nogui
 
