@@ -1,7 +1,7 @@
 FROM anapsix/alpine-java
 
 #RUN
-RUN apk update && apk add\
+RUN apk update && apk add \
 curl
 
 #Get Minecraft Server Jar
