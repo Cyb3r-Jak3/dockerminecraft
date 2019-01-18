@@ -16,5 +16,6 @@ EXPOSE 25565/tcp
 EXPOSE 25565/udp
 
 #Runs server completed
-ENTRYPOINT ["java", "-Xms1536M -Xmx2048M -jar /home/server.jar nogui"]
-
+RUN echo "java -jar /home/server.jar -Xms1024M -Xmx2048M nogui" > script.sh
+ENTRYPOINT [/bin/bash]
+CMD [./script.sh]
