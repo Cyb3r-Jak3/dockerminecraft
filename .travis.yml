@@ -3,6 +3,6 @@ sudo: required
 services:
  - docker
 script:
- - docker build -t MinecraftDocker
- - docker run --name MinecraftDocker -d MinecraftDocker
- - docker logs MinecraftDocker
+ - docker build -t minecraftdocker
+ - docker run --name minecraftdocker -d minecraftdocker
+ - docker logs minecraftdocker
