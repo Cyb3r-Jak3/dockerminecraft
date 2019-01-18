@@ -1,6 +1,8 @@
+sudo: required
+
 services:
-	- docker
+ - docker
 script:
-	- docker built -t MinecraftDocker
-	- docker run --name MinecraftDocker -d MinecraftDocker
-	- docker logs MinecraftDocker
+ - docker built -t MinecraftDocker
+ - docker run --name MinecraftDocker -d MinecraftDocker
+ - docker logs MinecraftDocker
