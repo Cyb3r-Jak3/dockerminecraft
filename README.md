@@ -1,12 +1,10 @@
 # Minecraft Server
 #### This is my first docker project
 [![License](https://img.shields.io/apm/l/vim-mode.svg?style=popout-square)](https://github.com/jwhite1st/dockerminecraft/blob/master/LICENSE)
-![](https://img.shields.io/docker/build/jwhite1st/minecraftdocker.svg)
 
 ---
 it uses anapsix/alpine-java
 It is a simple project to have a docker container for a vanilla minecraft server.
-![](https://img.shields.io/apm/l/vim-mode.svg?style=popout-square)
 
 ---
 #### Getting Started

@@ -1,0 +1,6 @@
+services:
+	- docker
+script:
+	- docker built -t MinecraftDocker
+	- docker run --name MinecraftDocker -d MinecraftDocker
+	- docker logs MinecraftDocker
