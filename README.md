@@ -1,10 +1,21 @@
-# minecraftserer
+# Minecraft Server
 #### This is my first docker project
 
 ---
-it uses anapsix/alpine-java  
-It is a simple project to have docker containers for minecraft.  
-Not sure if this is the right idea because it can take a lot of RAM but that is minecraft server.
+it uses anapsix/alpine-java
+It is a simple project to have a docker container for a vanilla minecraft server.
 
-Current issue:  
-- Using the entry point for java causing issue with heap size
+---
+#### Getting Started
+- `docker run -d jwhite1st/dockerminecraft`
+- Give it a few minutes to start and generate a new world
+- run `docker inspect <container ID> | grep "IPAddress"` to get the ip that the host conects to.
+
+
+#### TODO
+ - Allow for custom server properties
+ - Better IP Handling
+
+#### Current Issues
+- Local host has to use the docker ip instead of local host
+
