@@ -5,5 +5,4 @@ services:
 install:
  - docker build -t minecraftdocker ../dockerminecraft
 script:
- - docker run minecraftdocker  -d 
  - docker logs minecraftdocker
