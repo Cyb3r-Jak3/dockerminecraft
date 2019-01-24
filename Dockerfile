@@ -27,4 +27,4 @@ EXPOSE 25565/udp
 #Runs server completed
 RUN echo "java -jar ${MINEPATH}/server.jar -Xms512m -Xmx2g nogui" > ${MINEPATH}/script.sh
 #RUN chmod +x /usr/minecraft/script.sh
-ENTRYPOINT ["/bin/sh", "${MINEPATH}/script.sh"]
+ENTRYPOINT ["/bin/sh", "/usr/minecraft/script.sh"]
