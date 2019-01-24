@@ -3,7 +3,7 @@ sudo: required
 services:
  - docker
 install:
- - docker build -t jwhite1st/minecraftdocker ../dockerminecraft
+ - docker build -t minecraftdocker ../dockerminecraft
 script:
- - docker run --name jwhite1st/minecraftdocker -d minecraftdocker
+ - docker run minecraftdocker  -d 
  - docker logs minecraftdocker
